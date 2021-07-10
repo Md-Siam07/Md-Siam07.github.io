@@ -445,3 +445,71 @@ p
         margin: 10px 0;
     }
 }
+.heading i 
+{
+    color: var(--fade);
+    font-size: 45px;
+}
+.education .heading h5 
+{
+    font-size: 25px;
+    color: #00bcd4;
+    margin: 0;
+}
+.experience .heading h5 
+{
+    font-size: 25px;
+    color: #1791a1;
+    margin: 0;
+}
+
+.schools
+{
+    border-left: 2px dotted #00bcd4; 
+}
+.jobs
+{
+    border-left: 2px dotted #00bcd4; 
+}
+.schools .items,
+.experience .items
+{
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.edu-exp-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+
+.uil-experience-cap
+{
+    max-width: 50%;
+    height: 40px;
+}
+.schools .items h5,
+.jobs .items h5
+{
+    font-size: 20px;
+    color: #085863af;
+}
+.schools .items p,
+.jobs .items p
+{
+    font-size: 15px;
+    line-height: 0.5;
+}
+.schools .items h5::before 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 6px;
+    height: 6px;
+    border: 2px;
+    border-radius: 20px;
+    margin-left: -21px;
+}

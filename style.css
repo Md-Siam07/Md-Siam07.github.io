@@ -466,14 +466,22 @@ p
 .schools
 {
     border-left: 2px dotted #00bcd4; 
+    position: relative;
 }
 .jobs
 {
-    border-left: 2px dotted #00bcd4; 
+    border-left: 2px dotted #085863af; 
+}
+.items
+{
+    position: relative;
+    margin-top: 12px;
+    margin-left: 15px;
 }
 .schools .items,
 .experience .items
 {
+    position: relative;
     margin-left: 15px;
     margin-top: 40px;
 }
@@ -489,6 +497,16 @@ p
     max-width: 50%;
     height: 40px;
 }
+.schools .items h5::before 
+{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px;
+    border-radius: 50%;
+    left: -21px;
+}
 .schools .items h5,
 .jobs .items h5
 {
@@ -501,15 +519,8 @@ p
     font-size: 15px;
     line-height: 0.5;
 }
-.schools .items h5::before 
+.spanclass
 {
-    content: '';
     position: absolute;
-    left: 0;
-    top: 2px;
-    width: 6px;
-    height: 6px;
-    border: 2px;
-    border-radius: 20px;
-    margin-left: -21px;
+    left: -21px;
 }
